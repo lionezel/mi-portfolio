@@ -24,7 +24,7 @@ export class CardProjectComponent {
 
   //The Rick and Morty
   The_Rick_and_Morty(){
-    window.open('https://github.com/lionezel/Mi-Tienda')
+    window.open('https://github.com/lionezel/Rick-and-Morty-api')
   }
 
 }
