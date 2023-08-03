@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+  margin: 100px;
+    background: url(https://img.freepik.com/vector-gratis/fondo-semitono-futurista_53876-90595.jpg)
+      no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    height: 1000px;
+}
