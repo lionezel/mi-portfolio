@@ -1,41 +1,67 @@
-<div class="perfil" style="margin: 20px">
-  <div class="">
-    <img
-      src="assets/Artboard 1 (1).png"
-      alt=""
-      style="float: right; margin-right: 50px; width: 40%; top: 10%"
-    />
-    <h1 style="margin-left: 15%; margin-top: 10%">Hi, I'm Miguel</h1>
-    <h1
-      style="
-        margin-left: 15%;
-        margin-top: 1%;
-        color: rgb(16, 133, 228);
-        font-size: 70px;
-      "
-    >
-      Fronted Developer
-    </h1>
-    <p
-      style="
-        font-size: 30px;
-        margin-top: 20px;
-        font-weight: normal;
-        margin-left: 15%;
-      "
-    >
-      That loves creating web apps.
-    </p>
+<style>
+  .container {
+    align-items: center;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .texts {
+    margin-top: 5%;
+    padding: 20px;
+  }
+
+  .social {
+    margin-bottom: 100px;
+  }
+
+  img {
+    width: 35%;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    color: rgb(16, 133, 228);
+    font-size: 50px;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 5%;
+  }
+
+  p {
+    text-align: center;
+    font-size: 20px;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 15%;
+  }
+</style>
+
+<mat-grid-list cols="1" rowHeight="2:1">
+  <div class="container">
+    <div class="content">
+      <div class="texts">
+        <h1>Hi, I'm Miguel</h1>
+        <h2>Fronted Developer</h2>
+        <h4>That loves creating web apps.</h4>
+        <app-social-media></app-social-media>
+      </div>
+      <img src="assets/Artboard 1 (1).png" alt="" />
+    </div>
   </div>
+  <h3>About me:</h3>
+  <p>
+    I am a developer Fronted.I have little experience but improving day by day
+    to improve as a developer.
+  </p>
 
-  <app-social-media></app-social-media>
-</div>
+  <h3>Tech Stack:</h3>
+  <app-tech-stack></app-tech-stack>
 
-<h3 style="margin-left: 16%; margin-top: 15%">About:</h3>
-<app-about></app-about>
-
-<h3 style="margin-left: 4%; margin-top: 15%">Tech Stack:</h3>
-<app-tech-stack></app-tech-stack>
-
-<h3 style="margin-left: 4%; margin-top: 15%">My projects!!</h3>
-<app-card-project></app-card-project>
+  <app-card-project></app-card-project>
+</mat-grid-list>

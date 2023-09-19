@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './page/home/home.component';
 import { CardProjectComponent } from './components/card-project/card-project.component';
 import { TechStackComponent } from './components/tech-stack/tech-stack.component';
-import { AboutComponent } from './components/about/about.component';
+
 import { FormsModule } from '@angular/forms';
 import { SocialMediaComponent } from './components/social-media/social-media.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -16,15 +18,12 @@ import { SocialMediaComponent } from './components/social-media/social-media.com
     HomeComponent,
     CardProjectComponent,
     TechStackComponent,
-    AboutComponent,
-    SocialMediaComponent
+
+    SocialMediaComponent,
+    
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, BrowserAnimationsModule, MaterialModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

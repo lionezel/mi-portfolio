@@ -6,5 +6,7 @@ body{
       no-repeat center center fixed;
     background-size: cover;
     color: white;
-    height: 1000px;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
